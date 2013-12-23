@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/dev.dworks.apps.ataxer"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    style="@style/WizardPageContainer" >
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:drawableLeft="@drawable/money_plus" />
+
+    <ScrollView
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/deduction_80e"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#33b5e5"
+                app:headerText="Interest on Education Loan (80E)"
+                app:prefixDimension="24sp"
+                app:prefixColor="@color/blue"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/deduction_80ee"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#33b5e5"
+                app:headerText="Interest on House Property Loan (80EE)"
+                app:prefixDimension="24sp"
+                app:prefixColor="@color/blue"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/deduction_80tta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#33b5e5"
+                app:headerText="Interest on Saving A/C (80TTA)"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/deduction_80u"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#33b5e5"
+                app:headerText="Permanent Physical Disability (80U)"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/deduction_80g"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#33b5e5"
+                app:headerText="Donation (80G)"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/deduction_80gg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#33b5e5"
+                app:headerText="Rent Paid (80GG)"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/publisher_id"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

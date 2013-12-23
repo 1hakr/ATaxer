@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tax_payable"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="Name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Male"
+        android:textSize="16sp" />
+
+    <dev.dworks.apps.ataxer.ui.TextPlus
+        android:id="@+id/tax_payable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="right"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="0"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:textColorHint="@color/blue"
+        android:textSize="20sp" />
+
+</RelativeLayout>

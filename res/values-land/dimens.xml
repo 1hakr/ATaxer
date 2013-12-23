@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <dimen name="margin_pin">16dp</dimen>
+    <dimen name="textSize">25dp</dimen>
+    <dimen name="textInfoSize">30dp</dimen>
+</resources>

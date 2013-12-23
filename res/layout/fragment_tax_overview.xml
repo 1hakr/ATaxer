@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@id/progressContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4.0dip"
+            android:singleLine="true"
+            android:text="@string/loading"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@id/listContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@android:id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false" >
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5.0dip"
+                            android:text="Income"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="14.0sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="1.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="3.5dip"
+                            android:layout_weight="1.0"
+                            android:background="@color/blue"
+                            android:scaleType="center" />
+                    </LinearLayout>
+
+                    <com.echo.holographlibrary.BarGraph
+                        android:id="@+id/income_graph"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200.0dip"
+                        android:layout_margin="15.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5.0dip"
+                            android:text="Tax"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="14.0sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="1.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="3.5dip"
+                            android:layout_weight="1.0"
+                            android:background="@color/blue"
+                            android:scaleType="center" />
+                    </LinearLayout>
+
+                    <com.echo.holographlibrary.BarGraph
+                        android:id="@+id/tax_graph"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200.0dip"
+                        android:layout_margin="15.0dip" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10.0dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5.0dip"
+                            android:text="Saving"
+                            android:textAllCaps="true"
+                            android:textColor="@color/blue"
+                            android:textSize="14.0sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="1.0dip"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5.0dip"
+                            android:layout_marginRight="3.5dip"
+                            android:layout_weight="1.0"
+                            android:background="@color/blue"
+                            android:scaleType="center" />
+                    </LinearLayout>
+
+                    <com.echo.holographlibrary.BarGraph
+                        android:id="@+id/savings_graph"
+                        android:layout_width="fill_parent"
+                        android:layout_height="200.0dip"
+                        android:layout_margin="15.0dip" />
+                </LinearLayout>
+            </ScrollView>
+        </FrameLayout>
+
+        <TextView
+            android:id="@id/internalEmpty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_empty_overview"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:padding="20.0dip"
+            android:textColor="@color/blue_light"
+            android:textIsSelectable="false"
+            android:textSize="20.0sp" />
+    </FrameLayout>
+
+</FrameLayout>

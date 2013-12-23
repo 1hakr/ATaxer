@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="category_options">
+        <item>Category</item>
+        <item>Male age &lt; 60</item>
+        <item>Female age &lt; 60</item>
+        <item>Male/Female age &gt; 60 and &lt; 80</item>
+        <item>Male/Female age &gt; 80</item>
+    </string-array>
+    <string-array name="financial_yr_options">
+        <item>Select</item>
+        <item>2012&#8211;2013</item>
+        <item>2013&#8211;2014</item>
+        <item>2014&#8211;2015</item>
+    </string-array>
+    <string-array name="option_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="section_array">
+        <item>ATaxer</item><!-- Calculation -->
+        <item>Overview</item>
+    </string-array>
+
+    <integer-array name="section_images_array">
+        <item>@drawable/text_selection_calculator</item>
+        <item>@drawable/text_selection_overview</item>
+    </integer-array>
+
+    <string-array name="country_array">
+        <item>India</item>
+    </string-array>
+
+</resources>

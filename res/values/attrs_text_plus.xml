@@ -1,0 +1,12 @@
+<resources>
+
+    <declare-styleable name="TextCurrency">
+        <attr name="headerText" format="string" />
+        <attr name="valueText" format="string" />
+        <attr name="headerColor" format="color" />
+        <attr name="prefixColor" format="color" />
+        <attr name="prefixDimension" format="dimension" />
+        <attr name="prefixDrawable" format="color|reference" />
+    </declare-styleable>
+
+</resources>

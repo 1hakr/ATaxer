@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/dev.dworks.apps.ataxer"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    style="@style/WizardPageContainer" >
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:drawableLeft="@drawable/money_plus" />
+
+    <ScrollView
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/allowance_rent_paid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Rent Paid"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/allowance_transport"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Transport"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/allowance_gratuity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Gratuity"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/allowance_child_education"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Children Education"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/allowance_leave_encashment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Leave Encashment"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/allowance_lta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="LTA Spent"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/allowance_food_coupon"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Food Coupons"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/publisher_id"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

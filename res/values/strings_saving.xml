@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="professional_title">Professional Tax</string>
+    <string name="professional_info">Professional Tax is a Tax which is levied by the State on the Income earned by way of profession, trade, calling or employment.\nLimit: Rs.2500</string>
+    <string name="entertainment_title">Entertainment Allowance</string>
+    <string name="entertainment_info">Entertainment Allowance is only for government employees. \nLimit: Rs.5000</string>
+    <string name="lic_title">Life Insurance</string>
+    <string name="lic_info">LPayment of life insurance premium. It is allowed on premium paid on self, spouse and children even if they are not dependent on father or mother.</string>
+    <string name="ulip_title">Unit Linked Insurance Plan</string>
+    <string name="ulip_info">Unit linked Insurance policy of UTI/LIC Mutual fund Dhanraksha.</string>
+    <string name="epf_title">Employee Provident Fund</string>
+    <string name="epf_info">Provident Fund is a form of social safety net into which workers must contribute a portion of their salaries and employers must contribute on behalf of their workers. The money in the fund is then paid out to retirees, or in some cases to the disabled who cannot work.</string>
+    <string name="ppf_title">Public Provident Fund</string>
+    <string name="ppf_info">Public Provident Fund</string>
+    <string name="vpf_title">Voluntary Provident Fund</string>
+    <string name="vpf_info">Voluntary Provident Fund</string>
+    <string name="mutualfunds_title">Mutual Funds</string>
+    <string name="mutualfunds_info">Investing in units of notified mutual fund investing in approved public companies engaged in infrastructure facility or power sector.</string>
+    <string name="bonds_title">Infrastructure Bonds</string>
+    <string name="bonds_info">ubscription to the bonds issued by NABARD as specified by Central Government</string>
+    <string name="fixed_title">Fixed Deposit</string>
+    <string name="fixed_info">Any sum deposited as 5 years time deposit under Post Office Term Deposit or Term deposit with scheduled bank for a period of not less than 5 years as per scheme notified by Central Government.</string>
+    <string name="nsc_title">National Saving Certificate</string>
+    <string name="nsc_info">Subscriptions to National Savings Certificates VIII issues</string>
+    <string name="childtutionfee_title">Child Tution Fee</string>
+    <string name="childtutionfee_info">Tuition fees (not including donation or development fees) towards full-time education including play-school activities, pre-nursery and nursery classes, of any 2 children of an individual, paid to University, College or School in India</string>
+    <string name="hlpr_title">House Loan Principal Repayment</string>
+    <string name="hlpr_info">Principal part of loan taken for acquiring Residential House Property; provided that the house should not be transferred within 5 years Loan for land cost for residential house is also qualified</string>
+    <string name="nscinterest_title">NSC Interest / SupperAnnuation</string>
+    <string name="nscinterest_info">NSC Interest / SupperAnnuation</string>
+    <string name="a80ccc_title">Pension (80CCC)</string>
+    <string name="a80ccc_info">Payments made to LIC or to any other approved insurer under an approved pension plan is admissible for deduction under this section. Then pension plan policy should be for individual himself out of his taxable income. </string>
+    <string name="a80ccd_title">National Pension Scheme (80CCD)</string>
+    <string name="a80ccd_info">Contribution made by the assessee and by employer to New Pension Scheme is admissible for deduction under this section. The assessee should be an individual who is employed on or after 1 January 2004. The deduction shall be equal to the amount contributed by the assessee and/or by the employer, not exceeding 10% of his salary (basic+dearness allowance). Even a self-employed person can claim this deduction which will be restricted to 10 percent of gross total income.</string>
+    <!-- Savings 80 others -->
+    <string name="a80ccg_title">Rajiv Gandhi Equity Scheme (80CCG)</string>
+    <string name="a80ccg_info">Deduction of 50% is allowed on investments up to Rs:50,000 under the Rajiv Gandhi Equity Savings Scheme on select securities.</string>
+    <string name="a80d_title">Medical Insurance Premium (80D)</string>
+    <string name="a80d_info">Health insurance, popularly known as Mediclaim Policies, provides a deduction of up to 35,000.00 (₹15,000.00 for premium payments towards policies on self, spouse and children and ₹15,000.00 for premium payment towards non-senior citizen dependent parents or ₹20,000.00 for premium payment towards senior citizen dependent).</string>
+    <string name="a80ddb_title">Medical Bills (80DDB)</string>
+    <string name="a80ddb_info">Any cost incurred in the prevention or treatment of injury or disease. Medical expenses include health and dental insurance premiums, doctor and hospital visits, co-pays, prescription and over-the-counter drugs, glasses and contacts, crutches and wheelchairs, to name a few.\nLimit:Rs. 15000</string>
+    <string name="a80dd_title">Handicapped Dependents (80DD)</string>
+    <string name="a80dd_info">Handicapped Dependents (80DD)</string>
+    <string name="a80e_title">Education loan interest (80E)</string>
+    <string name="a80e_info">Interest payment on education loan for education in India or abroad gets deduction under this section. Education loan should be for self, spouse, child or the one whose legal guardian the assessee is</string>
+    <string name="a80ee_title">Additional Housing Loan Interest (80EE)</string>
+    <string name="a80ee_info">For self occupied properties, interest paid on a housing loan up to Rs150,000 per year is exempt from tax. This deduction is in addition to the deductions under sections 80C, 80CCF and 80D. However, this is only applicable for a residence constructed within three financial years after the loan is taken and also the loan if taken after 1 April 1999.</string>
+    <string name="a80tta_title">Interest on Savings Account (80TTA)</string>
+    <string name="a80tta_info">Interest from savings account in bank, post office or a co-operative society can be claimed for deduction under this section. \nLimit:Rs. 10000</string>
+    <string name="a80u_title">Permanent Physical Diasaality (80U)</string>
+    <string name="a80u_info">Disabled persons can get a flat deduction on Income Tax on producing their disability certificate.</string>
+    <string name="a80g_title">Donation (80G)</string>
+    <string name="a80g_info">Under section 80G deduction is available to any tax payer (may be individual, company, firm or any other person) making donation to the company.  50% of the donation made is allowed to be deducted from the taxable income and consequently tax is calculated.\nLimit: Rs.5000</string>
+    <string name="a80gg_title">Rent paid (80GG)</string>
+    <string name="a80gg_info">When HRA is not received , you can fill the rent paid here</string>
+
+</resources>

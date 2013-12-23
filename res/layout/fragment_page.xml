@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    style="@style/WizardPageContainer" >
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:drawableLeft="@drawable/money_details" />
+
+    <ListView
+        android:id="@android:id/list"
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:saveEnabled="false" />
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/publisher_id"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

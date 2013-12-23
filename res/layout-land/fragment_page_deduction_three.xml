@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/dev.dworks.apps.ataxer"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    style="@style/WizardPageContainer" >
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:drawableLeft="@drawable/money_plus" />
+
+    <ScrollView
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:shrinkColumns="*" >
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_80ccg"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#33b5e5"
+                    app:headerText="Rajiv Gandhi Equity Scheme (80CCG)"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_80d"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#33b5e5"
+                    app:headerText="Medical Insurance Premium(80D)"
+                    app:prefixColor="@color/blue"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_80ddb"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#33b5e5"
+                    app:headerText="Medical Bills (80DDB)"
+                    app:prefixColor="@color/blue"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_80dd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#33b5e5"
+                    app:headerText="Handicapped Dependents (80DD)"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/publisher_id"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

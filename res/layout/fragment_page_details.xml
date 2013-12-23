@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    style="@style/WizardPageContainer" >
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:drawableLeft="@drawable/person_details"
+        android:textColor="@color/grey_light" />
+
+    <ScrollView
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:text="Assesment Year "
+                        android:textSize="18sp" />
+
+                    <com.actionbarsherlock.internal.widget.IcsSpinner
+                        android:id="@+id/financial_year"
+                        style="@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="1"
+                        android:minHeight="48dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:text="Name"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:inputType="textCapWords"
+                        android:minHeight="40dp"
+                        android:saveEnabled="false"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="5dp"
+                        android:text="Age   "
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/age"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="10dp"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberSigned"
+                        android:maxLength="2"
+                        android:minHeight="40dp"
+                        android:saveEnabled="false"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_sex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radio_male"
+                            style="@style/Theme.Ataxer.SegmentedRadioMini"
+                            android:drawableLeft="@drawable/ic_radio_male"
+                            android:textSize="18sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_female"
+                            style="@style/Theme.Ataxer.SegmentedRadioMini"
+                            android:drawableLeft="@drawable/ic_radio_female"
+                            android:text=""
+                            android:textSize="18sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_metro"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/live_in_metro"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_metro"
+                        style="@style/Theme.Ataxer.SegmentedRadioMini"
+                        android:layout_width="50dp"
+                        android:text="Yes"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_non_metro"
+                        style="@style/Theme.Ataxer.SegmentedRadioMini"
+                        android:layout_width="50dp"
+                        android:text="No"
+                        android:textSize="18sp" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_resident"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/is_resident"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_resident"
+                        style="@style/Theme.Ataxer.SegmentedRadioMini"
+                        android:layout_width="50dp"
+                        android:text="Yes"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/radio_non_resident"
+                        style="@style/Theme.Ataxer.SegmentedRadioMini"
+                        android:layout_width="50dp"
+                        android:text="No"
+                        android:textSize="18sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/metro_cities" />
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/publisher_id"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/dev.dworks.apps.ataxer"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    style="@style/WizardPageContainer" >
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:drawableLeft="@drawable/money"
+        android:textColor="@color/orange" />
+
+    <ScrollView
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_salary"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Total Salary"
+                app:prefixColor="@color/red"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_salary_basic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Basic Salary"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_salary_hra"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="HRA"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_salary_conveyance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Conveyance Allowance"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_salary_lta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="LTA"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_salary_medical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Medical Allowance"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_salary_pf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="PF"
+                app:prefixColor="@color/blue"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+            <dev.dworks.apps.ataxer.ui.TextCurrency
+                android:id="@+id/income_other1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:headerColor="#ff33b5e5"
+                app:headerText="Other Income"
+                app:prefixDimension="24sp"
+                app:prefixDrawable="@android:drawable/ic_menu_add" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/publisher_id"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

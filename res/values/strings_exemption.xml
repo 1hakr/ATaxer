@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rendpaid_title">Rent Paid</string>
+    <string name="rentpaid_info">The actual rent paid per annum. HRA is given to meet the cost of a rented house taken by the employee for his stay.It is to be noted that the entire HRA is not deductible.
+        An employee can claim exemption on his HRA under the Income Tax Act if he stays in a rented house and is in receipt of HRA from his employer. In order to claim the deduction, an employee must actually pay rent for the house which he occupies.</string>
+    
+    <string name="transport_title">Transport</string>
+    <string name="transport_info">Transport Tax Exempt is for conveyance. No bills/receipts needed.\nLimit:Rs. 9,600</string>
+    
+    <string name="gratuity_title">Gratuity</string>
+    <string name="gratuity_info">Gratuity is a voluntary payment made by an employer in appreciation of services rendered by employee. Tax exemption is applicable for only Death-cum-Retirement Gratuity.</string>
+    
+    <string name="childeducation_title">Children Education</string>
+    <string name="childeducation_info">Children Education</string>
+    
+    <string name="leave_title">Leave Encashment</string>
+    <string name="leave_info">In case you have not taken leaves and have opted for encashing these leaves, your employer would be paying you some amount as leave encashment. The amount so received on account of encashing the leaves not availed would be liable to tax under head “Income from Salary”.</string>
+    
+    <string name="ltaspent_title">LTA Spent</string>
+    <string name="ltaspent_info">Employee (recieving LTA and claiming the same) must be traveling with his family on the journey to claim LTA, otherwise the journey will not be eligible for exemption.
+It means if your family is travelling without you, then they you will not be eligible for claiming LTA benefit.
+Only the cost of travel by shortest distance is covered. LTA exemption can be claimed where the employer provides LTA to employee for leave to any place in India taken by the employee and their family. Such exemption is limited to the extent of actual travel costs incurred by the employee. Travel has to be undertaken within India and overseas destinations are not covered for exemption.\nLimit: Rs.50000</string>
+	
+    <string name="food_title">Food Coupons</string>
+    <string name="food_info"> For a meal voucher to be tax exempt to the extent of Rs. 50 per meal, the meal voucher should be used only during working hours. If an employee consumes two meals a day using meal vouchers in a working day and works for 22 days in a month (excluding holidays on say, Saturdays and Sundays), then meal vouchers can be tax exempt only to the extent of Rs. 2,200 per month (Rs. 50 per meal x 2 x 22 days). If the organization (which does not work on Saturdays and Sundays) provides meal vouchers worth Rs. 3,000 for the month, then Rs. 800 (Rs. 3,000 – Rs. 2,200) shall be taxable in the hands of the employee. Payroll managers should also exclude leave days (for e.g. casual leave and sick leave) on which employees do not work while calculating tax exemption on food coupons.
+        \nLimit:Rs. 20000(in this app)</string>
+</resources>

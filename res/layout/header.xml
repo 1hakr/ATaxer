@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    style="@style/Theme.Ataxer.ListSeparator"
+    android:layout_height="30dp"
+    android:singleLine="true"
+    android:textStyle="bold"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:textSize="14sp"
+    android:textAllCaps="true"
+    android:textIsSelectable="false" />

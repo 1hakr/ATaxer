@@ -1,0 +1,12 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@color/blue" android:state_checked="true" android:state_enabled="true" android:state_window_focused="false"/>
+    <item android:color="@color/blue" android:state_checked="false" android:state_enabled="true" android:state_window_focused="false"/>
+    
+    <item android:color="@color/white" android:state_enabled="true" android:state_pressed="true"/>
+    <item android:color="@color/white" android:state_enabled="true" android:state_focused="true"/>
+    
+    <item android:color="@color/black" android:state_checked="false" android:state_enabled="true"/>
+    <item android:color="@color/blue" android:state_checked="true" android:state_enabled="true"/>
+
+</selector>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="pressed_ataxer">#CCFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue">#ff0099cc</color>
+    <color name="blue_light">#9933b5e4</color>
+    <color name="grey">#ff808080</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+
+    <drawable name="radio_blue">#ff0099cc</drawable>
+
+    <color name="grey_light">#ff323232</color>
+    <color name="orange">#ff8800</color>
+    <color name="red">#ffff4444</color>
+
+</resources>

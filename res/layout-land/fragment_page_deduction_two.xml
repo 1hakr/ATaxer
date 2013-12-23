@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/dev.dworks.apps.ataxer"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    style="@style/WizardPageContainer" >
+
+    <TextView
+        style="@style/WizardPageTitle"
+        android:drawableLeft="@drawable/money_plus" />
+
+    <ScrollView
+        style="@style/WizardPageScrollContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:shrinkColumns="*" >
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_lic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="LIC"
+                    app:prefixColor="@color/blue"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_ulip"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Unit Linked Insurance Plan"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_epf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Employee Provident Fund"
+                    app:prefixColor="@color/blue"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_ppf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Public Provident Fund"
+                    app:prefixColor="@color/blue"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_vpf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Voluntary Provident Fund"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_mutual_fund"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Mutual Funds"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_infrastructure_bond"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Infrastructure Bonds"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_fixed_deposit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Fixed Deposits"
+                    app:prefixColor="@color/blue"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_nsc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="National Saving Certificate"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_child_tution_fee"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Child Tution Fees"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_hlpr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="House Loan Principal Repayment"
+                    app:prefixColor="@color/blue"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_nsc_interest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="NSC Interest / Approved Supperannuation"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+
+            <TableRow>
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_80ccc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:headerText="Pension (80CCC)"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+
+                <dev.dworks.apps.ataxer.ui.TextCurrency
+                    android:id="@+id/deduction_80ccd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    app:headerColor="#ff33b5e5"
+                    app:prefixDimension="24sp"
+                    app:prefixDrawable="@android:drawable/ic_menu_add" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/publisher_id"
+        ads:loadAdOnCreate="true" />
+
+</LinearLayout>

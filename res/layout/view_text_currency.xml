@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Theme.Ataxer.BorderlessButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/textplus_background_ab_ataxer"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-10dp" >
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="Header"
+            android:textAllCaps="true"
+            android:textColor="@color/grey"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="0dip"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="3.5dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:scaleType="center" />
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/TextViewAppTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <dev.dworks.apps.ataxer.ui.TextPlus
+            android:id="@+id/value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-light"
+            android:text="0"
+            android:textSize="@dimen/textSize" />
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:minHeight="@dimen/textInfoSize"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_info_selection" />
+    </RelativeLayout>
+
+</LinearLayout>

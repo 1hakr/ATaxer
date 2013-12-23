@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            style="@style/ProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceSmall" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/listContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <FrameLayout
+            android:id="@android:id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:drawSelectorOnTop="false" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="@style/ProgressBar.AtaxerMultu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/progress_multi_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="sans-serif-light"
+                        android:maxLines="2"
+                        android:text="Total Tax Payable"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" >
+
+                        <dev.dworks.apps.ataxer.ui.TextPlus
+                            android:id="@+id/total_tax_payable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:gravity="center_vertical"
+                            android:text="0"
+                            android:textColor="@color/blue"
+                            android:textSize="36sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" / Year"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/seperator"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/blue"
+                    android:visibility="gone" />
+
+                <ScrollView
+                    android:id="@+id/contents"
+                    style="@style/WizardPageScrollContainer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" >
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:shrinkColumns="1" >
+
+                        <TableRow
+                            android:id="@+id/financial_yr_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Assesment Year"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/financial_yr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/catgory_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Category"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:id="@+id/category"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="center_vertical"
+                                android:text=""
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/income_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Income"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/income"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/allowance_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Exemptions"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/allowance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/deduction_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Savings"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/deduction"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/taxable_income_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Taxable Income"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/taxable_income"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/tax_payable_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Tax Payable"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/tax_payable"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/rebate_container"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Rebate"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/rebate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/surcharge_container"
+                            android:layout_marginBottom="10dp"
+                            android:visibility="gone" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Surcharge"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/surcharge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/educational_cess_container"
+                            android:layout_marginBottom="10dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="right|center"
+                                android:maxLines="2"
+                                android:text="Educational CESS"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <dev.dworks.apps.ataxer.ui.TextNumber
+                                android:id="@+id/educational_cess"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="center_vertical"
+                                android:text="0"
+                                android:textSize="20sp" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+                <com.google.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    ads:adSize="SMART_BANNER"
+                    ads:adUnitId="@string/publisher_id"
+                    ads:loadAdOnCreate="true" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/internalEmpty"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textIsSelectable="false" />
+    </FrameLayout>
+
+</FrameLayout>

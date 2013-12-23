@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="salary_title">Total Salary</string>
+    <string name="salary_info">All income received as salary under employer-employee relationship .This included all the components like HRA, LTA, Conveyance, Medical Allowance, PF and special allowance </string>
+    <string name="basic_title">Basic Income</string>
+    <string name="basic_info">Basic Salary which is the direct remuneration component in a compensation package on which other benefits like Provident Fund, Gratuity etc.</string>
+    <string name="hra_title">House Rent Allowance</string>
+    <string name="hra_info">Salary component for House and rent</string>
+    <string name="conveyance_title">Conveyance Allowance</string>
+    <string name="conveyance_info">Salary component for Conveyance</string>
+    <string name="lta_title">Leave Travel Allowance</string>
+    <string name="lta_info">Salary component for Leave and travel </string>
+    <string name="medical_title">Medical Allowance</string>
+    <string name="medical_info">Salary component for Medical Expenses</string>
+    <string name="pf_title">Provident Fund</string>
+    <string name="pf_info">Salary component for Provident Fund</string>
+    <string name="other_title">Other Income</string>
+    <string name="other_info">Other Income includes income from \n1.House property \n2.Capital Gain \n3.Commission \n4.Business \n5.Winnings from lottery, Crozzword puzzle etc</string>
+
+</resources>
