@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ATaxer</string>
-    <string name="app_ver">Another Tax Manager v0.1</string>
+    <string name="app_ver">Another Tax Manager</string>
     <string name="app_company">Developed By </string>
     <string name="app_url">http://www.dworks.in</string>
     <string name="app_about_info">To make a small difference.</string>

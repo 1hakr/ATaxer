@@ -1,7 +1,6 @@
 package dev.dworks.apps.ataxer.wizard.fragments;
 
 import static dev.dworks.apps.ataxer.misc.Utils.getFormattedString;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,8 +9,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
-
 import dev.dworks.apps.ataxer.R;
 import dev.dworks.apps.ataxer.ui.TextCurrency;
 import dev.dworks.apps.ataxer.wizard.pages.DeductionThreePage;
@@ -21,7 +18,7 @@ import dev.dworks.apps.ataxer.wizard.pages.ExemptionPage;
 import dev.dworks.apps.ataxer.wizard.pages.IncomePage;
 import dev.dworks.betterpickers.numberpicker.NumberPickerBuilder;
 import dev.dworks.betterpickers.numberpicker.NumberPickerDialogFragment.NumberPickerDialogHandler;
-import dev.dworks.lib.wizard.model.PageFragmentCallbacks;
+import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
 
 public class IncomeFragment extends Fragment 
 	implements NumberPickerDialogHandler, OnClickListener{
@@ -231,7 +228,7 @@ public class IncomeFragment extends Fragment
 			mPage.notifyDataChanged();
 
 			mDeductionTwoPage.getData().putLong(DeductionTwoPage.DEDUCTION_EPF_DATA_KEY, (number != 0) ? number : 0);
-			mDeductionTwoPage.getData().putLong(DeductionTwoPage.DEDUCTION_PPF_DATA_KEY, (number != 0) ? number / 2 : 0);
+			//mDeductionTwoPage.getData().putLong(DeductionTwoPage.DEDUCTION_PPF_DATA_KEY, (number != 0) ? number / 2 : 0);
 			mDeductionTwoPage.notifyDataChanged();
 			DeductionTwoFragment.getTotal(mDeductionTwoPage);
 			break;
@@ -279,6 +276,7 @@ public class IncomeFragment extends Fragment
 			break;
 
 		case R.id.income_other1:
+			npb.setMaxNumber(null);
 			npb.setNumber(getNumber(IncomePage.INCOME_OTHER_DATA_KEY)).show();
 			break;
 		}

@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import android.support.v4.app.Fragment;
 import dev.dworks.apps.ataxer.wizard.fragments.TaxReviewFragment;
-import dev.dworks.lib.wizard.model.ReviewItem;
-import dev.dworks.lib.wizard.model.WizardModelCallbacks;
-import dev.dworks.lib.wizard.model.page.ReviewPage;
+import dev.dworks.libs.awizard.model.ReviewItem;
+import dev.dworks.libs.awizard.model.WizardModelCallbacks;
+import dev.dworks.libs.awizard.model.page.ReviewPage;
 
 public class TaxReviewPage extends ReviewPage{
     

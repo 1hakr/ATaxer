@@ -1,19 +1,20 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
 
     <item
         android:id="@+id/action_tax"
         android:orderInCategory="101"
-        android:showAsAction="never"
-        android:title="Tax"/>
+        android:title="Tax"
+        support:showAsAction="never"/>
     <item
         android:id="@+id/action_about"
         android:orderInCategory="103"
-        android:showAsAction="never"
-        android:title="About"/>
+        android:title="About"
+        support:showAsAction="never"/>
     <item
         android:id="@+id/action_setting"
         android:orderInCategory="102"
-        android:showAsAction="never"
-        android:title="Settings"/>
+        android:title="Settings"
+        support:showAsAction="never"/>
 
 </menu>

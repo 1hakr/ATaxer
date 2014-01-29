@@ -8,20 +8,18 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-
-import com.actionbarsherlock.app.ActionBar;
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import dev.dworks.apps.ataxer.misc.Utils;
 import dev.dworks.apps.ataxer.wizard.TaxCalculationActivity;
-import dev.dworks.lib.wizard.model.PageFragmentCallbacks;
-import dev.dworks.lib.wizard.model.page.Page;
-import dev.dworks.libs.actionbarplus.SherlockFragmentActivityPlus;
-import eu.inmite.android.lib.dialogs.ISimpleDialogListener;
-import eu.inmite.android.lib.dialogs.SimpleDialogFragment;
+import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
+import dev.dworks.libs.awizard.model.page.Page;
+import dev.dworks.libs.actionbarplus.dialog.BaseDialogFragment.SimpleDialogListener;
+import dev.dworks.libs.actionbarplus.dialog.SimpleDialogFragment;
 
-public class TaxViewActivity extends SherlockFragmentActivityPlus implements PageFragmentCallbacks, ISimpleDialogListener, ActionBar.TabListener {
+public class TaxViewActivity extends ActionBarActivity implements PageFragmentCallbacks, SimpleDialogListener, ActionBar.TabListener {
 	private Bundle args;
 	private TabsPagerAdapter mTabsAdapter;
 	private ViewPager mViewPager;
@@ -54,7 +52,7 @@ public class TaxViewActivity extends SherlockFragmentActivityPlus implements Pag
 	}
 
 	public boolean onCreateOptionsMenu(Menu paramMenu) {
-		getSupportMenuInflater().inflate(R.menu.tax_view, paramMenu);
+		getMenuInflater().inflate(R.menu.tax_view, paramMenu);
 		return super.onCreateOptionsMenu(paramMenu);
 	}
 

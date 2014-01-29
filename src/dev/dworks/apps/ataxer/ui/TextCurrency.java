@@ -5,6 +5,7 @@ import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
+import android.support.v4.app.FragmentActivity;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.util.AttributeSet;
@@ -14,11 +15,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import dev.dworks.apps.ataxer.R;
-import dev.dworks.libs.actionbarplus.SherlockFragmentActivityPlus;
-import eu.inmite.android.lib.dialogs.SimpleDialogFragment;
+import dev.dworks.libs.actionbarplus.dialog.SimpleDialogFragment;
 
 public class TextCurrency extends LinearLayout implements View.OnClickListener {
-	private SherlockFragmentActivityPlus mActivity;
+	private FragmentActivity mActivity;
 	private Context mContext;
 	private String mDetails;
 	private int mExampleColor = 0;
@@ -52,7 +52,7 @@ public class TextCurrency extends LinearLayout implements View.OnClickListener {
 	private void init(Context paramContext, AttributeSet paramAttributeSet,
 			int paramInt) {
 		mContext = paramContext;
-		mActivity = ((SherlockFragmentActivityPlus) paramContext);
+		mActivity = ((FragmentActivity) paramContext);
 		TypedArray a = getContext().obtainStyledAttributes(
 				paramAttributeSet, R.styleable.TextCurrency, paramInt, 0);
 		mHeaderText = a.getString(R.styleable.TextCurrency_headerText);

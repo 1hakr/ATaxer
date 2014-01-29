@@ -6,9 +6,9 @@ import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import dev.dworks.apps.ataxer.misc.Utils;
 import dev.dworks.apps.ataxer.wizard.fragments.DetailsFragment;
-import dev.dworks.lib.wizard.model.ReviewItem;
-import dev.dworks.lib.wizard.model.WizardModelCallbacks;
-import dev.dworks.lib.wizard.model.page.Page;
+import dev.dworks.libs.awizard.model.ReviewItem;
+import dev.dworks.libs.awizard.model.WizardModelCallbacks;
+import dev.dworks.libs.awizard.model.page.Page;
 
 public class DetailsPage extends Page {
 	public static final String AGE_DATA_KEY = "age";

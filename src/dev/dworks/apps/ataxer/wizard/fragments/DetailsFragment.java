@@ -4,6 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.internal.widget.AdapterViewICS;
+import android.support.v7.internal.widget.AdapterViewICS.OnItemSelectedListener;
+import android.support.v7.internal.widget.SpinnerICS;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -17,14 +20,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
-
-import com.actionbarsherlock.internal.widget.IcsAdapterView;
-import com.actionbarsherlock.internal.widget.IcsAdapterView.OnItemSelectedListener;
-import com.actionbarsherlock.internal.widget.IcsSpinner;
-
 import dev.dworks.apps.ataxer.R;
 import dev.dworks.apps.ataxer.wizard.pages.DetailsPage;
-import dev.dworks.lib.wizard.model.PageFragmentCallbacks;
+import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
 
 public class DetailsFragment extends Fragment 
 	implements OnItemSelectedListener, OnCheckedChangeListener{
@@ -34,7 +32,7 @@ public class DetailsFragment extends Fragment
     private String mKey;
     private DetailsPage mPage;
     private EditText name;
-	private IcsSpinner financial_year;
+	private SpinnerICS financial_year;
 
 	private EditText age;
 	private RadioGroup radio_group_sex;
@@ -76,7 +74,7 @@ public class DetailsFragment extends Fragment
         radio_male = (RadioButton) rootView.findViewById(R.id.radio_male);
         radio_female = (RadioButton) rootView.findViewById(R.id.radio_female);
         radio_group_metro = (RadioGroup) rootView.findViewById(R.id.radio_group_metro);
-        financial_year = (IcsSpinner)rootView.findViewById(R.id.financial_year);
+        financial_year = (SpinnerICS)rootView.findViewById(R.id.financial_year);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.financial_yr_options, R.layout.item_year_list);
@@ -241,7 +239,7 @@ public class DetailsFragment extends Fragment
 	}
 
 	@Override
-	public void onItemSelected(IcsAdapterView<?> parent, View view, int position, long id) {
+	public void onItemSelected(AdapterViewICS<?> parent, View view, int position, long id) {
 		hideSoftKeyboard();
 		switch (parent.getId()) {
 		case R.id.category:
@@ -262,7 +260,7 @@ public class DetailsFragment extends Fragment
 	}
 
 	@Override
-	public void onNothingSelected(IcsAdapterView<?> parent) {
+	public void onNothingSelected(AdapterViewICS<?> parent) {
 		
 	}
 

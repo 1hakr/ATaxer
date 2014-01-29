@@ -23,7 +23,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
 import dev.dworks.apps.ataxer.R;
-import dev.dworks.lib.wizard.model.ui.ReviewFragment;
+import dev.dworks.libs.awizard.model.ui.ReviewFragment;
 
 public class TaxReviewFragment extends ReviewFragment {
 

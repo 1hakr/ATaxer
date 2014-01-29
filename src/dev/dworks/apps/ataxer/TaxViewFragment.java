@@ -19,10 +19,10 @@ import dev.dworks.apps.ataxer.ui.TextNumber;
 import dev.dworks.apps.ataxer.ui.TextPlus;
 import dev.dworks.apps.ataxer.wizard.TaxCalculationActivity;
 import dev.dworks.apps.ataxer.wizard.pages.TaxPage;
-import dev.dworks.lib.wizard.model.PageFragmentCallbacks;
-import dev.dworks.libs.actionbarplus.SherlockContentPlusFragment;
+import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
+import dev.dworks.libs.actionbarplus.app.ActionBarContentFragment;
 
-public class TaxViewFragment extends SherlockContentPlusFragment implements
+public class TaxViewFragment extends ActionBarContentFragment implements
 		LoaderManager.LoaderCallbacks<Cursor> {
 	private static final String ARG_KEY = "key";
 	//private static final String TAG = "TaxViewFragment";
@@ -173,8 +173,8 @@ public class TaxViewFragment extends SherlockContentPlusFragment implements
 	@Override
 	public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
 		if (cursor.moveToFirst()) {
-			getSherlockActivity().getSupportActionBar().setTitle(cursor.getString(cursor.getColumnIndex(TaxCalculationColumns.NAME)));
-			getSherlockActivity().getSupportActionBar().setSubtitle("Tax Details");
+			getActionBarActivity().getSupportActionBar().setTitle(cursor.getString(cursor.getColumnIndex(TaxCalculationColumns.NAME)));
+			getActionBarActivity().getSupportActionBar().setSubtitle("Tax Details");
 			financial_yr.setText(Utils.getFinancialYr(cursor.getInt(cursor.getColumnIndex(TaxCalculationColumns.FINANCIAL_YR))));
 			category.setText(Utils.getCategory(cursor.getInt(cursor.getColumnIndex(TaxCalculationColumns.CATEGORY))));
 			income.setValueText(Utils.getFormattedString(cursor.getLong(cursor.getColumnIndex(TaxCalculationColumns.TOTAL_INCOME))));

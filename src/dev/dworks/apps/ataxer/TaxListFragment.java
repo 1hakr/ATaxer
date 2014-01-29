@@ -17,25 +17,23 @@ import android.support.v4.widget.SimpleCursorAdapter.ViewBinder;
 import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuInflater;
-import com.actionbarsherlock.view.MenuItem;
-
 import dev.dworks.apps.ataxer.entity.TaxCalculation;
 import dev.dworks.apps.ataxer.entity.TaxCalculation.TaxCalculationColumns;
 import dev.dworks.apps.ataxer.misc.Utils;
 import dev.dworks.apps.ataxer.ui.TextPlus;
 import dev.dworks.apps.ataxer.wizard.TaxCalculationActivity;
-import dev.dworks.libs.actionbarplus.SherlockListPlusFragment;
-import dev.dworks.libs.actionbarplus.SimpleSectionedListAdapter;
-import dev.dworks.libs.actionbarplus.SimpleSectionedListAdapter.Section;
+import dev.dworks.libs.actionbarplus.app.ActionBarListFragment;
+import dev.dworks.libs.actionbarplus.widget.SimpleSectionedListAdapter;
+import dev.dworks.libs.actionbarplus.widget.SimpleSectionedListAdapter.Section;
 
-public class TaxListFragment extends SherlockListPlusFragment 
+public class TaxListFragment extends ActionBarListFragment 
 	implements LoaderManager.LoaderCallbacks<Cursor>, View.OnClickListener {
 	//private static final String TAG = "TaxListFragment";
 	private SimpleCursorAdapter mAdapter;

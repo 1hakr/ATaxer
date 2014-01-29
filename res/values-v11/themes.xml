@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Ataxer" parent="@style/Theme.Sherlock.Light.DarkActionBar">
+    <style name="Theme.Ataxer" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_ataxer</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Ataxer</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Ataxer</item>
         <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Ataxer</item>
-        <item name="android:actionBarTabTextStyle">@style/Widget.Sherlock.ActionBar.TabText</item>
+        <item name="android:actionBarTabTextStyle">@style/Widget.AppCompat.ActionBar.TabText</item>
         <item name="android:actionDropDownStyle">@style/DropDownNav.Ataxer</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Ataxer</item>
         <item name="android:actionModeBackground">@drawable/cab_background_top_ataxer</item>
@@ -17,7 +17,7 @@
         <item name="android:actionBarWidgetTheme">@style/Theme.Ataxer.Widget</item>
         <item name="sdlDialogStyle">@style/Theme.Ataxer.DialogStyleLight</item>
         <item name="android:editTextStyle">@style/EditTextAppTheme</item>
-        <item name="android:windowBackground">@color/abs__background_holo_light</item>
+        <item name="android:windowBackground">@color/abp__background_holo_light</item>
 <!--         <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
         <item name="android:dropDownSpinnerStyle">@style/SpinnerAppTheme.DropDown</item> -->
     </style>

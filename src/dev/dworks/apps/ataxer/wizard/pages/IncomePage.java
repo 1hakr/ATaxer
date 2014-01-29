@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 import android.support.v4.app.Fragment;
 import dev.dworks.apps.ataxer.wizard.fragments.IncomeFragment;
-import dev.dworks.lib.wizard.model.ReviewItem;
-import dev.dworks.lib.wizard.model.WizardModelCallbacks;
-import dev.dworks.lib.wizard.model.page.Page;
+import dev.dworks.libs.awizard.model.ReviewItem;
+import dev.dworks.libs.awizard.model.WizardModelCallbacks;
+import dev.dworks.libs.awizard.model.page.Page;
 
 /**
  * A page asking for income

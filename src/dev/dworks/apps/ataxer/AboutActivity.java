@@ -17,26 +17,43 @@
 package dev.dworks.apps.ataxer;
 
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
 
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
+public class AboutActivity extends ActionBarActivity {
 
-import dev.dworks.libs.actionbarplus.SherlockFragmentActivityPlus;
-
-public class AboutActivity extends SherlockFragmentActivityPlus {
+	private String APP_VERSION;
+	private int APP_VERSION_CODE;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_about);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		
+
+    	try {
+            final PackageInfo info = getPackageManager().getPackageInfo(getPackageName(), 0);
+    		APP_VERSION = info.versionName;
+    		APP_VERSION_CODE = info.versionCode;
+		} catch (NameNotFoundException e) {
+			APP_VERSION = "Unknown";
+			APP_VERSION_CODE = 0;
+			e.printStackTrace();
+		}
+		TextView logo = (TextView)findViewById(R.id.logo);
+		logo.setText(logo.getText() + " v" + APP_VERSION);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getSupportMenuInflater().inflate(R.menu.about, menu);
+		getMenuInflater().inflate(R.menu.about, menu);
 		return true;
 	}
 

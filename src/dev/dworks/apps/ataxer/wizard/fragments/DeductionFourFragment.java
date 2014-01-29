@@ -10,8 +10,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-
 import dev.dworks.apps.ataxer.R;
 import dev.dworks.apps.ataxer.misc.Utils;
 import dev.dworks.apps.ataxer.ui.TextCurrency;
@@ -19,7 +17,7 @@ import dev.dworks.apps.ataxer.wizard.pages.DeductionFourPage;
 import dev.dworks.apps.ataxer.wizard.pages.IncomePage;
 import dev.dworks.betterpickers.numberpicker.NumberPickerBuilder;
 import dev.dworks.betterpickers.numberpicker.NumberPickerDialogFragment.NumberPickerDialogHandler;
-import dev.dworks.lib.wizard.model.PageFragmentCallbacks;
+import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
 
 public class DeductionFourFragment extends Fragment implements NumberPickerDialogHandler, OnClickListener {
 	private static final String ARG_KEY = "key";

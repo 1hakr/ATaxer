@@ -10,8 +10,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
-
 import dev.dworks.apps.ataxer.R;
 import dev.dworks.apps.ataxer.ui.TextCurrency;
 import dev.dworks.apps.ataxer.wizard.pages.DeductionFourPage;
@@ -20,7 +18,7 @@ import dev.dworks.apps.ataxer.wizard.pages.ExemptionPage;
 import dev.dworks.apps.ataxer.wizard.pages.IncomePage;
 import dev.dworks.betterpickers.numberpicker.NumberPickerBuilder;
 import dev.dworks.betterpickers.numberpicker.NumberPickerDialogFragment;
-import dev.dworks.lib.wizard.model.PageFragmentCallbacks;
+import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
 
 public class ExemptionFragment extends Fragment implements
 		NumberPickerDialogFragment.NumberPickerDialogHandler, OnClickListener {

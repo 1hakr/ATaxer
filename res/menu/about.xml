@@ -1,39 +1,41 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
 
-    <item
-        android:id="@+id/action_github"
-        android:icon="@drawable/ic_menu_github"
-        android:showAsAction="always"
-        android:title="Github"/>
-    <item
-        android:id="@+id/action_gplus"
-        android:icon="@drawable/ic_menu_gplus"
-        android:orderInCategory="101"
-        android:showAsAction="always"
-        android:title="Google+"/>
-    <item
-        android:id="@+id/action_twitter"
-        android:icon="@drawable/ic_menu_twitter"
-        android:orderInCategory="102"
-        android:showAsAction="always"
-        android:title="Twitter"/>
     <item
         android:id="@+id/action_feedback"
         android:icon="@drawable/ic_menu_feedback"
-        android:orderInCategory="103"
-        android:showAsAction="always"
-        android:title="Feedback"/>
+        android:orderInCategory="101"
+        android:title="Feedback"
+        support:showAsAction="always"/>
     <item
         android:id="@+id/action_rate"
         android:icon="@drawable/ic_menu_rate"
-        android:orderInCategory="104"
-        android:showAsAction="always"
-        android:title="Rate"/>
+        android:orderInCategory="102"
+        android:title="Rate"
+        support:showAsAction="always"/>
     <item
         android:id="@+id/action_support"
         android:icon="@drawable/ic_menu_support"
+        android:orderInCategory="103"
+        android:title="Support"
+        support:showAsAction="always"/>
+    <item
+        android:id="@+id/action_gplus"
+        android:icon="@drawable/ic_menu_gplus"
+        android:orderInCategory="104"
+        android:title="Google+"
+        support:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_twitter"
+        android:icon="@drawable/ic_menu_twitter"
+        android:title="Twitter"
         android:orderInCategory="105"
-        android:showAsAction="always"
-        android:title="Support"/>
+        support:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_github"
+        android:icon="@drawable/ic_menu_github"
+        android:orderInCategory="106"
+        android:title="Github"
+        support:showAsAction="ifRoom"/>
 
 </menu>

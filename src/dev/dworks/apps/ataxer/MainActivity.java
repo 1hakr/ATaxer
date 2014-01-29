@@ -8,7 +8,10 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarActivity;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
@@ -17,18 +20,13 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.actionbarsherlock.view.Menu;
-import com.actionbarsherlock.view.MenuItem;
-
 import dev.dworks.apps.ataxer.misc.PinViewHelper;
 import dev.dworks.apps.ataxer.misc.PinViewHelper.PINDialogFragment;
 import dev.dworks.apps.ataxer.misc.Utils;
-import dev.dworks.libs.actionbarplus.SherlockFragmentActivityPlus;
+import dev.dworks.libs.actionbarplus.dialog.SimpleDialogFragment;
 import dev.dworks.libs.actionbartoggle.ActionBarToggle;
-import eu.inmite.android.lib.dialogs.SimpleDialogFragment;
 
-public class MainActivity extends SherlockFragmentActivityPlus {
+public class MainActivity extends ActionBarActivity {
 	private Fragment fragment;
 	private DrawerLayout mDrawerLayout;
 	private ListView mDrawerList;
@@ -162,7 +160,7 @@ public class MainActivity extends SherlockFragmentActivityPlus {
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getSupportMenuInflater().inflate(R.menu.main, menu);
+		getMenuInflater().inflate(R.menu.main, menu);
 		return super.onCreateOptionsMenu(menu);
 	}
 
