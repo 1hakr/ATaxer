@@ -3,6 +3,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:paddingBottom="10dp"
+    android:clipToPadding="false"
     android:paddingTop="10dp" >
 
     <RelativeLayout
@@ -74,7 +75,7 @@
                         android:layout_gravity="left"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="10dp"
-                        android:drawableRight="@drawable/dworks_dark"
+                        android:drawableRight="@drawable/dworks"
                         android:gravity="center_vertical"
                         android:text="@string/app_company"
                         android:textAppearance="?android:attr/textAppearanceSmall"

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Bundle;
-import android.preference.PreferenceFragment;
 import android.support.v7.app.ActionBarActivity;
 import android.view.MenuItem;
 
@@ -54,25 +53,5 @@ public class SettingsActivity extends ActionBarActivity {
 
 	private static boolean isSimplePreferences(Context context) {
 		return ALWAYS_SIMPLE_PREFS || Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB || !isXLargeTablet(context);
-	}
-
-/*	*//** {@inheritDoc} *//*
-	@Override
-	public void onBuildHeaders(List<Header> target) {
-		if (!isSimplePreferences(this)) {
-			loadHeadersFromResource(R.xml.pref_headers, target);
-		}
-	}*/
-	
-	/**
-	 * This fragment shows general preferences only. It is used when the
-	 * activity is showing a two-pane settings UI.
-	 */
-	public static class GeneralPreferenceFragment extends PreferenceFragment {
-		@Override
-		public void onCreate(Bundle savedInstanceState) {
-			super.onCreate(savedInstanceState);
-			addPreferencesFromResource(R.xml.pref_general);
-		}
 	}
 }

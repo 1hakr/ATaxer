@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
@@ -24,6 +25,7 @@ import dev.dworks.apps.ataxer.misc.PinViewHelper;
 import dev.dworks.apps.ataxer.misc.PinViewHelper.PINDialogFragment;
 import dev.dworks.apps.ataxer.misc.Utils;
 import dev.dworks.libs.actionbarplus.dialog.SimpleDialogFragment;
+import dev.dworks.libs.actionbarplus.misc.AppRate;
 import dev.dworks.libs.actionbartoggle.ActionBarToggle;
 
 public class MainActivity extends ActionBarActivity {
@@ -143,6 +145,31 @@ public class MainActivity extends ActionBarActivity {
 	protected void onPostCreate(Bundle savedInstanceState) {
 		super.onPostCreate(savedInstanceState);
 		//mDrawerToggle.syncState();
+	}
+	
+	@Override
+	protected void onResume() {
+		super.onResume();
+        AppRate.with(this)
+        .text("Like ATaxer? Rate It!")
+        .listener(new AppRate.OnShowListener() {
+            @Override
+            public void onRateAppShowing() {
+                // View is shown
+            }
+
+            @Override
+            public void onRateAppDismissed() {
+                // User has dismissed it
+            }
+
+            @Override
+            public void onRateAppClicked() {
+    			Intent intentMarket = new Intent("android.intent.action.VIEW");
+    			intentMarket.setData(Uri.parse("market://details?id=dev.dworks.apps.ataxer"));
+    			startActivity(intentMarket);
+            }
+        }).checkAndShow();
 	}
 	
 	@Override

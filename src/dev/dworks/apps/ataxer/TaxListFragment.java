@@ -30,8 +30,8 @@ import dev.dworks.apps.ataxer.misc.Utils;
 import dev.dworks.apps.ataxer.ui.TextPlus;
 import dev.dworks.apps.ataxer.wizard.TaxCalculationActivity;
 import dev.dworks.libs.actionbarplus.app.ActionBarListFragment;
-import dev.dworks.libs.actionbarplus.widget.SimpleSectionedListAdapter;
-import dev.dworks.libs.actionbarplus.widget.SimpleSectionedListAdapter.Section;
+import dev.dworks.libs.astickyheader.SimpleSectionedListAdapter;
+import dev.dworks.libs.astickyheader.SimpleSectionedListAdapter.Section;
 
 public class TaxListFragment extends ActionBarListFragment 
 	implements LoaderManager.LoaderCallbacks<Cursor>, View.OnClickListener {
@@ -99,7 +99,7 @@ public class TaxListFragment extends ActionBarListFragment
 				return false;
 			}
 		});
-		mSimpleSectionedListAdapter = new SimpleSectionedListAdapter(getActivity(), R.layout.header, mAdapter);
+		mSimpleSectionedListAdapter = new SimpleSectionedListAdapter(getActivity(), mAdapter, R.layout.header, R.id.header);
 		setListAdapter(mSimpleSectionedListAdapter);
 		setEmptyText(getText(R.string.empty_list));
 		setListShown(false);

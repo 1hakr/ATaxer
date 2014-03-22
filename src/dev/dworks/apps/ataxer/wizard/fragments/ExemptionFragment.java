@@ -259,7 +259,7 @@ public class ExemptionFragment extends Fragment implements
 			break;
 
 		case R.id.allowance_lta:
-			npb.setMaxNumber(50000);
+			npb.setMaxNumber(12000);
 			//npb.setMaxNumber((int) mIncomePage.getData().getLong(IncomePage.INCOME_SALARY_LTA_DATA_KEY));
 			npb.setNumber(getNumber(ExemptionPage.ALLOWANCE_LTA_DATA_KEY)).show();
 			break;

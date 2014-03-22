@@ -29,14 +29,12 @@
             android:name="dev.dworks.apps.ataxer.wizard.TaxCalculationActivity"
             android:configChanges="keyboardHidden|screenSize"
             android:label="@string/title_activity_tax_calculation"
-            android:parentActivityName="MainActivity"
             android:windowSoftInputMode="stateHidden|adjustPan" >
         </activity>
         <activity
             android:name="dev.dworks.apps.ataxer.TaxViewActivity"
             android:configChanges="keyboardHidden|screenSize"
-            android:label="@string/title_activity_tax_view"
-            android:parentActivityName="MainActivity" >
+            android:label="@string/title_activity_tax_view" >
         </activity>
 
         <!-- AdMob -->
@@ -52,7 +50,6 @@
         <activity
             android:name="dev.dworks.apps.ataxer.AboutActivity"
             android:label="@string/title_activity_about"
-            android:parentActivityName="dev.dworks.apps.ataxer.MainActivity"
             android:theme="@style/Theme.Ataxer.About"
             android:uiOptions="splitActionBarWhenNarrow" >
             <meta-data
