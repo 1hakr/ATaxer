@@ -103,13 +103,13 @@ public class TaxViewFragment extends ActionBarContentFragment implements
 		rebate = ((TextNumber) root.findViewById(R.id.rebate));
 		surcharge = ((TextNumber) root.findViewById(R.id.surcharge));
 		progressBar = ((ProgressBar) root.findViewById(R.id.progressBar));
-		if (uri == null) {
-			((TextView) root.findViewById(android.R.id.title)).setText(mPage.getTitle());
-			progressBar.setVisibility(View.GONE);
-		}
 		progressBar.setVisibility(View.GONE);
 		contents = root.findViewById(R.id.contents);
 		seperator = root.findViewById(R.id.seperator);
+		if (uri == null) {
+			((TextView) root.findViewById(android.R.id.title)).setText(mPage.getTitle());
+			contents.setPadding(10, 0, 10, 0);
+		}
 		return root;
 	}
 	

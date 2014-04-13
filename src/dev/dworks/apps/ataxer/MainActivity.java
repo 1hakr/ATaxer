@@ -21,6 +21,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.crashlytics.android.Crashlytics;
 import dev.dworks.apps.ataxer.misc.PinViewHelper;
 import dev.dworks.apps.ataxer.misc.PinViewHelper.PINDialogFragment;
 import dev.dworks.apps.ataxer.misc.Utils;
@@ -44,7 +45,8 @@ public class MainActivity extends ActionBarActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-/*		StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
+Crashlytics.start(this);
+		/*		StrictMode.setThreadPolicy(new StrictMode.ThreadPolicy.Builder()
 		.detectAll()
 		.penaltyFlashScreen()
 		.penaltyLog()

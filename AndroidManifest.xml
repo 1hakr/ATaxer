@@ -60,6 +60,11 @@
             android:name="dev.dworks.apps.ataxer.SettingsActivity"
             android:label="@string/title_activity_settings" >
         </activity>
+
+
+    
+
+    <meta-data android:name="com.crashlytics.ApiKey" android:value="8d9d245a1d53a9ea0d140f5ea40de7cf4b3ab098"/>
     </application>
 
 </manifest>

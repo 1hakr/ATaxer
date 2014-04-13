@@ -65,15 +65,15 @@ public class AboutActivity extends ActionBarActivity {
 			break;
 		case R.id.action_github:
 			startActivity(new Intent("android.intent.action.VIEW",
-					Uri.parse("https://github.com/DWorkS")));
+					Uri.parse(getString(R.string.github))));
 			break;
 		case R.id.action_gplus:
 			startActivity(new Intent("android.intent.action.VIEW",
-					Uri.parse("https://plus.google.com/109240246596102887385")));
+					Uri.parse(getString(R.string.gplus))));
 			break;
 		case R.id.action_twitter:
 			startActivity(new Intent("android.intent.action.VIEW",
-					Uri.parse("https://twitter.com/1HaKr")));
+					Uri.parse(getString(R.string.twitter))));
 			break;
 		case R.id.action_feedback:
 			Intent intentFeedback = new Intent("android.intent.action.SEND");
