@@ -16,6 +16,7 @@
         <!-- Light.DarkActionBar specific -->
         <item name="actionBarWidgetTheme">@style/Theme.Ataxer.Widget</item>
         <item name="sdlDialogStyle">@style/Theme.Ataxer.DialogStyleLight</item>
+        <item name="sdlTitleTextStyle">@style/DailogTitle</item>
         <item name="android:editTextStyle">@style/EditTextAppTheme</item>
         <item name="android:windowBackground">@color/abp__background_holo_light</item>
         <!--

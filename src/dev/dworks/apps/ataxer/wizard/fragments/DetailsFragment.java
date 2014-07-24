@@ -22,7 +22,6 @@ import dev.dworks.apps.ataxer.ui.Spinner;
 import dev.dworks.apps.ataxer.wizard.pages.DetailsPage;
 import dev.dworks.libs.actionbarplus.widget.AdapterViewICS;
 import dev.dworks.libs.actionbarplus.widget.AdapterViewICS.OnItemSelectedListener;
-import dev.dworks.libs.actionbarplus.widget.FloatLabelEditText;
 import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
 
 public class DetailsFragment extends Fragment 
@@ -69,7 +68,7 @@ public class DetailsFragment extends Fragment
         View rootView = inflater.inflate(R.layout.fragment_page_details, container, false);
         ((TextView) rootView.findViewById(android.R.id.title)).setText(mPage.getTitle());
 
-        name = (EditText)((FloatLabelEditText) rootView.findViewById(R.id.name)).getEditText();
+        name = (EditText) rootView.findViewById(R.id.name);
         age = (EditText) rootView.findViewById(R.id.age);
         radio_group_sex = (RadioGroup) rootView.findViewById(R.id.radio_group_sex);
         radio_male = (RadioButton) rootView.findViewById(R.id.radio_male);
