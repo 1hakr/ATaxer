@@ -4,9 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.internal.widget.AdapterViewICS;
-import android.support.v7.internal.widget.AdapterViewICS.OnItemSelectedListener;
-import android.support.v7.internal.widget.SpinnerICS;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
@@ -21,7 +18,11 @@ import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TextView;
 import dev.dworks.apps.ataxer.R;
+import dev.dworks.apps.ataxer.ui.Spinner;
 import dev.dworks.apps.ataxer.wizard.pages.DetailsPage;
+import dev.dworks.libs.actionbarplus.widget.AdapterViewICS;
+import dev.dworks.libs.actionbarplus.widget.AdapterViewICS.OnItemSelectedListener;
+import dev.dworks.libs.actionbarplus.widget.FloatLabelEditText;
 import dev.dworks.libs.awizard.model.PageFragmentCallbacks;
 
 public class DetailsFragment extends Fragment 
@@ -32,7 +33,7 @@ public class DetailsFragment extends Fragment
     private String mKey;
     private DetailsPage mPage;
     private EditText name;
-	private SpinnerICS financial_year;
+	private Spinner financial_year;
 
 	private EditText age;
 	private RadioGroup radio_group_sex;
@@ -68,13 +69,13 @@ public class DetailsFragment extends Fragment
         View rootView = inflater.inflate(R.layout.fragment_page_details, container, false);
         ((TextView) rootView.findViewById(android.R.id.title)).setText(mPage.getTitle());
 
-        name = (EditText) rootView.findViewById(R.id.name);
+        name = (EditText)((FloatLabelEditText) rootView.findViewById(R.id.name)).getEditText();
         age = (EditText) rootView.findViewById(R.id.age);
         radio_group_sex = (RadioGroup) rootView.findViewById(R.id.radio_group_sex);
         radio_male = (RadioButton) rootView.findViewById(R.id.radio_male);
         radio_female = (RadioButton) rootView.findViewById(R.id.radio_female);
         radio_group_metro = (RadioGroup) rootView.findViewById(R.id.radio_group_metro);
-        financial_year = (SpinnerICS)rootView.findViewById(R.id.financial_year);
+        financial_year = (Spinner)rootView.findViewById(R.id.financial_year);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(getActivity(),
                 R.array.financial_yr_options, R.layout.item_year_list);

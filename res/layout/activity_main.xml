@@ -17,7 +17,7 @@
         android:background="#808080"
         android:orientation="vertical" >
 
-        <android.support.v7.internal.widget.SpinnerICS
+        <dev.dworks.apps.ataxer.ui.Spinner
             android:id="@+id/country"
             style="@style/SpinnerAppTheme"
             android:layout_width="match_parent"

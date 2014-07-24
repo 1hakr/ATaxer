@@ -6,7 +6,7 @@
         <item name="android:popupMenuStyle">@style/PopupMenu.Ataxer</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Ataxer</item>
         <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Ataxer</item>
-        <item name="actionBarTabTextStyle">@style/ActionBarTabTextStyle.Ataxer</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextStyle.Ataxer</item>
         <item name="android:actionDropDownStyle">@style/DropDownNav.Ataxer</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Ataxer</item>
         <item name="android:actionModeBackground">@drawable/cab_background_top_ataxer</item>

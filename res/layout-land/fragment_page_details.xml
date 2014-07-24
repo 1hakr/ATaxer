@@ -42,7 +42,7 @@
                         android:text="Assesment Year "
                         android:textSize="18sp" />
 
-                    <android.support.v7.internal.widget.SpinnerICS
+                    <dev.dworks.apps.ataxer.ui.Spinner
                         android:id="@+id/financial_year"
                         style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
                         android:layout_width="0dp"
