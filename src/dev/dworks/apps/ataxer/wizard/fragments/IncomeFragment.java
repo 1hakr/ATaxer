@@ -230,7 +230,7 @@ public class IncomeFragment extends Fragment
 			mDeductionTwoPage.getData().putLong(DeductionTwoPage.DEDUCTION_EPF_DATA_KEY, (number != 0) ? number : 0);
 			//mDeductionTwoPage.getData().putLong(DeductionTwoPage.DEDUCTION_PPF_DATA_KEY, (number != 0) ? number / 2 : 0);
 			mDeductionTwoPage.notifyDataChanged();
-			DeductionTwoFragment.getTotal(mDeductionTwoPage);
+			DeductionTwoFragment.getTotal(mDeductionTwoPage, "");
 			break;
 
 		case R.id.income_other1:
